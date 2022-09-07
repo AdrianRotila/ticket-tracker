@@ -10,10 +10,16 @@
         width: 130px;
         font-size: 12px;
         margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         .role {
+            height: 30px;
             font-style: italic;
             margin: 5px;
+            text-align: center;
         }
     
         .name {

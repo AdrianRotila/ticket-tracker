@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from '../Counter/Counter';
 import "./Ticket.scss"
 
 const Ticket = (props) => {
@@ -9,6 +10,7 @@ const Ticket = (props) => {
             <div key={index} className='ticket'>
                 <p className='name'>{ticket.name}</p>
                 <p className='role'>{ticket.role}</p>
+                <Counter />
             </div>
         )
     })

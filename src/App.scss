@@ -1,16 +1,14 @@
 .app {
-  
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   
-  
-  .container {
+  .container{
     min-height: 95vh;
     width: 95vw;
-    
     border: 2px solid black;
     display: flex;
     justify-content: flex-start;
