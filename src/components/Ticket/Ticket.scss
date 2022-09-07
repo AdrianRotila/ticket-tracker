@@ -1,0 +1,26 @@
+.all-tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .ticket {
+        border: solid 2px black;
+        height: 185px;
+        width: 130px;
+        font-size: 12px;
+        margin: 20px 20px;
+
+        .role {
+            font-style: italic;
+            margin: 5px;
+        }
+    
+        .name {
+            margin: 0;
+            font-weight: bolder;
+            margin: 5px;
+        }
+    }
+}
+
