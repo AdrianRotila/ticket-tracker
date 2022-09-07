@@ -1,32 +1,42 @@
-.all-tickets {
+.all-tickets, .ticket {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.all-tickets {
     flex-wrap: wrap;
     
     .ticket {
-        border: solid 2px black;
-        height: 185px;
+        
+        height: 190px;
         width: 130px;
         font-size: 12px;
         margin: 20px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+       background-color: rgb(255, 215, 38);
 
-        .role {
-            height: 30px;
+        &__role {
+            width: 100%;
+            height: 15%;
             font-style: italic;
-            margin: 5px;
             text-align: center;
         }
     
-        .name {
+        &__name {
+            width: 100%;
             margin: 0;
             font-weight: bolder;
-            margin: 5px;
+            text-align: center;
         }
+    }
+
+    .ticket:hover{
+        transform: scale(1.02);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+        transition: 0.5s;
     }
 }
 

@@ -3,14 +3,14 @@ import Counter from '../Counter/Counter';
 import "./Ticket.scss"
 
 const Ticket = (props) => {
-    const {ticketInfoArr} = props;
+    const {ticketInfoArr, counterTitle} = props;
 
     const ticketInfoJSX = ticketInfoArr.map((ticket, index) => {
         return (
             <div key={index} className='ticket'>
-                <p className='name'>{ticket.name}</p>
-                <p className='role'>{ticket.role}</p>
-                <Counter />
+                <p className='ticket__name'>{ticket.name}</p>
+                <p className='ticket__role'>{ticket.role}</p>
+                <Counter counterTitle = {counterTitle} />
             </div>
         )
     })

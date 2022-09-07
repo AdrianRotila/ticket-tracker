@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Title.scss"
 
-const Title = () => {
-  return (
-    <h1 className='title'>Ticket Tracker</h1>
-  )
+const Title = (props) => {
+    const {mainTitle} = props;
+
+    return (
+        <h1 className='title'>{mainTitle}</h1>
+    )
 }
 
 export default Title
