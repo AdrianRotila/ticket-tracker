@@ -1,0 +1,66 @@
+.window {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 280px;
+    width: 320px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 35px;
+
+    &__close {
+        height: 40px;
+        width: 90%;
+        
+         img {
+            float: right;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+         }
+    }
+
+   
+
+    &__name, &__role {
+        height: 15%;
+        width: 75%;
+        border-radius: 15px;
+        background-color: white;
+        padding-left: 20px;
+        letter-spacing: 1px;
+        font-size: 11px;
+        border: none;
+        outline: none;
+        font-style: italic;
+    }
+
+    &__submit {
+        background-color: white;
+        font-weight: bolder;
+        height: 15%;
+        width: 40%;
+        cursor: pointer;
+        border-radius: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    &__submit:active {
+        transform: scale(0.95);
+    }
+    
+}

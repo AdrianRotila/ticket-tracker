@@ -30,7 +30,6 @@
         &__increment, &__decrement {
             margin: 0;
             cursor: pointer;
-            user-select: none;
         }
 
         &__increment:active, &__decrement:active {

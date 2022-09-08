@@ -1,5 +1,22 @@
-.title {
-    font-weight: bolder;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
-    text-align: center;
+    width: 85vw;
+    
+    &__title {
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    &__add {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    &__add:active {
+        transform: scale(0.9);
+    }
 }
