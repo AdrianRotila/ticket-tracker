@@ -16,7 +16,7 @@ const Counter = (props) => {
 
     const counterTools = (
         <div className='counter-tools'>
-            <p className='counter-tools__decrement' onClick = {decreaseNumber}>-</p>
+            <p className='counter-tools__decrement' onClick = {decreaseNumber}>–</p>
             <p className='counter-tools__increment' onClick = {increaseNumber}>+</p>
         </div>
     );

@@ -5,6 +5,7 @@ import "./Ticket.scss"
 const Ticket = (props) => {
     const {ticketInfoArr, counterTitle} = props;
 
+    
     const ticketInfoJSX = ticketInfoArr.map((ticket, index) => {
         return (
             <div key={index} className='ticket'>
