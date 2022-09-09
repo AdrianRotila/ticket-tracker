@@ -1,15 +1,18 @@
 import "./Header.scss"
-import AddTicket from "../AddTicket/AddTicket.jsx"
+import add from "../../assets/images/add-button.svg";
+import AddTicket from "../AddTicket/AddTicket";
 
-const Title = (props) => {
-    const {mainTitle} = props;
-
+const Header = (props) => {
+    const {showForm, toggleAdd, handleSubmit, nameEvent, roleEvent} = props;
+   
     return (
         <div className='header'>
-            <h1 className='header__title' >{mainTitle}</h1>
-            <AddTicket className = 'header__add' />
+            <h1 className='header__title' >Ticket Tracker</h1>
+            {showForm && <AddTicket showForm = {showForm} toggleAdd = {toggleAdd} nameEvent = {nameEvent} handleSubmit = {handleSubmit} roleEvent = {roleEvent}/>}
+            <img onClick={toggleAdd} className = 'header__add' src={add} alt="" 
+            />
         </div>
     )
 }
 
-export default Title
+export default Header
