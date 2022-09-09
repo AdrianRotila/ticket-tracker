@@ -1,14 +1,13 @@
-import "./Title.scss"
-import Button from "../AddButton/AddButton.jsx"
+import "./Header.scss"
+import AddTicket from "../AddTicket/AddTicket.jsx"
 
 const Title = (props) => {
     const {mainTitle} = props;
 
-
     return (
         <div className='header'>
             <h1 className='header__title' >{mainTitle}</h1>
-            <Button className = 'header__add' />
+            <AddTicket className = 'header__add' />
         </div>
     )
 }

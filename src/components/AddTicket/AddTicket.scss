@@ -25,15 +25,17 @@
         height: 40px;
         width: 90%;
         
-         img {
+        img {
             float: right;
             height: 40px;
             width: 40px;
             cursor: pointer;
-         }
-    }
+        }
 
-   
+        img:active {
+            transform: scale(0.95);
+        }
+    }
 
     &__name, &__role {
         height: 15%;
@@ -48,8 +50,13 @@
         font-style: italic;
     }
 
+    &__name:focus, &__role:focus {
+        transform:  scale(1.03);
+        transition: 0.2s;
+    }
+
     &__submit {
-        background-color: white;
+        background-color: orange;
         font-weight: bolder;
         height: 15%;
         width: 40%;
@@ -57,6 +64,7 @@
         border-radius: 20px;
         letter-spacing: 1px;
         margin-bottom: 15px;
+        border: none;
     }
 
     &__submit:active {

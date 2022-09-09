@@ -1,6 +1,5 @@
-import React from 'react'
 import Counter from '../Counter/Counter';
-import "./Ticket.scss"
+import "./Tickets.scss"
 
 const Ticket = (props) => {
     const {ticketInfoArr, counterTitle} = props;

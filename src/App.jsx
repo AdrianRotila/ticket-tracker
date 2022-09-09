@@ -1,6 +1,6 @@
 import './App.scss';
-import Title from './components/Title/Title';
-import Ticket from './components/Ticket/Ticket';
+import Header from './components/Header/Header';
+import Tickets from './components/Tickets/Tickets';
 import team from './data/team.js';
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="app">
       <div className='container'>
-        <Title mainTitle = "Ticket Tracker"/>
-        <Ticket ticketInfoArr = {team} counterTitle = "Ticket Counter"/>
+        <Header mainTitle = "Ticket Tracker"/>
+        <Tickets ticketInfoArr = {team} counterTitle = "Ticket Counter"/>
       </div>
     </div>
   );
